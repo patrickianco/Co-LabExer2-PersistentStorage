@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.co.co_labexer2_persistentstorage.MainActivity">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="66dp"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/password"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="150dp"
+        android:layout_marginBottom="36dp"
+        android:layout_above="@+id/btnShared"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnShared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="saveShared"
+        android:text="Shared Preferences"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="231dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnInternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="saveInternal"
+        android:text="Internal Storage"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="303dp"
+        android:layout_below="@+id/btnShared"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="nextActivity"
+        android:text="Next"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="376dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/btnInternal"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
